@@ -5,7 +5,8 @@ function! HighlightOverlength(charLimit)
     execute("match Overlength /\%".a:charLimit."v.\+/")
 endfunction
 
-if has("autocmd")
-    autocmd VimEnter call HighlightOverlength(81)
-endif
+" if has("autocmd")
+"     autocmd VimEnter call HighlightOverlength(81)
+" endif
 
+command! -nargs=1 SetO call HighlightOverlength(<f-args>)
