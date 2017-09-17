@@ -5,6 +5,6 @@ function! HighlightOverlength(charLimit)
     execute("match Overlength /\\%".charLimit."v.\\+/")
 endfunction
 
-call HighlightOverlength(80)
+call HighlightOverlength(120)
 
-" ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+" gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
